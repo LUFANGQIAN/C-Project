@@ -3,10 +3,23 @@
 
 int main()
 {
-    int array[400000] = {0}; // 初始化数值为0
-    int maxbit;              // 最多位数
-    int index;               // 指数
-    int temp;                // 存放计算位的十位，简单来说就是 进位
+    char cin_string[100]; // 定义一个足够大的数组
+    int cin_int;
+    printf("请输入指数:\n");
+    scanf("%s", cin_string); // 直接使用数组名作为参数
+    cin_int = (int)cin_string;
+
+    if (cin_int <)
+    {
+        /* code */
+    }
+
+    printf("您输入的指数是: %s\n", cin_string);
+
+    int array[cin_int] = {0}; // 初始化数值为0
+    int maxbit;               // 最多位数
+    int index;                // 指数
+    int temp;                 // 存放计算位的十位，简单来说就是 进位
 
     temp = 0;
     index = 1000000;
