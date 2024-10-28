@@ -1,19 +1,22 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-// 程序的主入口
-int main()
-{
-    // 输出语句
-    int valueInt;
-    // valueInt赋值为1
-    valueInt = 78;
-    // printf是系统默认的函数
-    printf("valueInt=%d \n", valueInt);
-    printf("sizeof(valueInt)=%lu \n", sizeof(valueInt));
-    // 定义了一个long int类型变量valueLongInt,同时初始化为100
-    long int valueLongInt = 100;
-    printf("sizeof(valueLongInt)=%lu \n", sizeof(valueLongInt));
-    /*程序结束了
-    这里的0，需要与上面的int相呼应*/
+int main() {
+    double bottom;
+    double height;  // 更正了拼写错误
+    double area;
+
+    printf("请输入底部值: ");  // 添加冒号和空格以提高用户友好度
+    scanf("%lf", &bottom);  // 使用 %lf 作为 double 的格式说明符
+
+    printf("请输入高度值: ");  // 添加冒号和空格以提高用户友好度
+    scanf("%lf", &height);  // 使用 %lf 作为 double 的格式说明符
+
+    printf("三角形的底为: %f \n三角形的高为: %f \n", bottom, height);
+
+    area = (height * bottom) / 2;
+
+    printf("三角形的面积为: %f\n", area);  // 添加换行符以提高输出格式
+
     return 0;
 }
