@@ -3,7 +3,7 @@
 int main()
 {
     int a;
-    int *p;
+    int *p = NULL;
 
     a = 1000;
     p = &a;

@@ -1,6 +1,8 @@
 #include <stdio.h>
 #define PI 3.14
 
+int g;
+
 int main()
 {
     double area;      // 面积

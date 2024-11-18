@@ -1,28 +1,23 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+
 int main()
 {
+    int a = 0;
+    int b = 0;
+    char input[] = "HelloWorld";
 
-    int sum = 0;
-
-    // for (int i = 100; i <= 999; i++)
-    // {
-    //     if (i % 2 == 0)
-    //     {
-    //         sum = sum + i;
-    //     }
-    // }
-
-    // printf("三位数全部偶数和为：%d", sum);
-
-    for (int i = 100; i < 999;)
+    for (size_t i = 1; i <= 9; i++)
     {
-
-        sum = sum + i;
-
-        i = i + 2;
+        for (size_t j = 1; j <= i; j++)
+        {
+            printf("%d * %d = %-4d ", j, i, i * j);
+        }
+        printf("\n");
     }
 
-    printf("三位数全部偶数和为：%d", sum);
+    printf("%s", input);
 
     return 0;
 }
