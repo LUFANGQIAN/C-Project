@@ -9,10 +9,6 @@ int main()
     scanf("%s", cin_string); // 直接使用数组名作为参数
     cin_int = (int)cin_string;
 
-    if (cin_int <)
-    {
-        /* code */
-    }
 
     printf("您输入的指数是: %s\n", cin_string);
 
